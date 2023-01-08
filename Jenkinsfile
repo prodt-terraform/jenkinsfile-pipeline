@@ -7,7 +7,7 @@ options { ansiColor('xterm') }
  stages { 
    stage ('Checkout Repo') { 
      steps { 
-       cleanWs()
+      // cleanWs()
        sh  'git clone https://github.com/prodt-terraform/ecs-fargate-task.git'
       }
       } 
@@ -47,11 +47,7 @@ options { ansiColor('xterm') }
    
    ''' 
    }
-        post { 
-        always { 
-            cleanWs()
-         }
-        }
+        
        }
   }
 }
