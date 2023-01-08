@@ -23,7 +23,7 @@ stage ('Terraform version') {
   stage ('Terraform init') { 
   steps {
    sh '''
-   cd terraform-test/
+   cd ecs-fargate-task/
    terraform init
    ''' 
    }
