@@ -19,7 +19,7 @@ options { ansiColor('xterm') }
    ''' 
     }
     }
-    
+   */ 
   stage ('Terraform init') { 
   steps {
    sh '''
@@ -28,7 +28,7 @@ options { ansiColor('xterm') }
    ''' 
    }
    }
-   
+   /*
   stage ('Terraform plan') { 
   steps {
    sh '''
