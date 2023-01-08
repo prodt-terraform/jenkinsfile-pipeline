@@ -43,7 +43,7 @@ options { ansiColor('xterm') }
   steps {
    sh '''
    cd ecs-fargate-task/
-   terraform destroy --auto-approve
+   terraform apply --auto-approve
    
    ''' 
    }
