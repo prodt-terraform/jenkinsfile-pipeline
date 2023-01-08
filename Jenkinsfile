@@ -12,7 +12,7 @@ options { ansiColor('xterm') }
       }
       } 
 
-stage ('Terraform version') { 
+/*stage ('Terraform version') { 
   steps {
    sh '''
     terraform --version
@@ -38,7 +38,7 @@ stage ('Terraform version') {
    ''' 
    }
    }
-   
+ */  
  stage ('Terraform apply') { 
   steps {
    sh '''
