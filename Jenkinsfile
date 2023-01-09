@@ -12,14 +12,14 @@ options { ansiColor('xterm') }
       }
       } 
 
-/*stage ('Terraform version') { 
+stage ('Terraform version') { 
   steps {
    sh '''
     terraform --version
    ''' 
     }
     }
-   */ 
+   
   stage ('Terraform init') { 
   steps {
    sh '''
@@ -28,22 +28,22 @@ options { ansiColor('xterm') }
    ''' 
    }
    }
-   /*
+   
   stage ('Terraform plan') { 
   steps {
    sh '''
    cd ecs-fargate-task/
    terraform plan -out=tfplan.out
-   terraform show -json tfplan.out
+   #terraform show -json tfplan.out
    ''' 
    }
    }
- */  
+ 
  stage ('Terraform apply') { 
   steps {
    sh '''
    cd ecs-fargate-task/
-   terraform destroy --auto-approve
+   terraform apply --auto-approve
    
    ''' 
    }
