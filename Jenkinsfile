@@ -11,7 +11,7 @@ options { ansiColor('xterm') }
        sh  'git clone https://github.com/prodt-terraform/ecs-fargate-task.git'
       }
       } 
-/*
+
 stage ('Terraform version') { 
   steps {
    sh '''
@@ -19,7 +19,7 @@ stage ('Terraform version') {
    ''' 
     }
     }
-   */
+   
   stage ('Terraform init') { 
   steps {
    sh '''
@@ -28,17 +28,17 @@ stage ('Terraform version') {
    ''' 
    }
    }
-   /*
+   
   stage ('Terraform plan') { 
   steps {
    sh '''
    cd ecs-fargate-task/
    terraform plan -out=tfplan.out
-   #terraform show -json tfplan.out
+   
    ''' 
    }
    }
- */
+ 
  stage ('Terraform apply') { 
   steps {
    sh '''
