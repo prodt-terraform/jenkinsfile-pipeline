@@ -43,7 +43,7 @@ stage ('Terraform version') {
   steps {
    sh '''
    cd ecs-fargate-task/
-   terraform apply --auto-approve
+   terraform destroy --auto-approve
    
    ''' 
    }
