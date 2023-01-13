@@ -39,7 +39,7 @@ stage ('Terraform version') {
    }
    }
  */
- stage ('Terraform apply') { 
+ stage ('Terraform destroy') { 
   steps {
    sh '''
    cd ecs-fargate-task/
