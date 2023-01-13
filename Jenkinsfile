@@ -28,7 +28,7 @@ stage ('Terraform version') {
    ''' 
    }
    }
-   
+   /*
   stage ('Terraform plan') { 
   steps {
    sh '''
@@ -38,7 +38,7 @@ stage ('Terraform version') {
    ''' 
    }
    }
- 
+ */
  stage ('Terraform apply') { 
   steps {
    sh '''
