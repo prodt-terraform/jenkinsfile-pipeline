@@ -33,9 +33,9 @@ stage ('Terraform version') {
    sh '''
    cd ecs-fargate-task/
    terraform plan -out=tfplan.out
-   terraform show -json tfplan.out
+   
    ''' 
    }
    }
  }
- }
+ }logstashSend failBuild: true, maxLines: 1000
