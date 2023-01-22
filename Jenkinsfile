@@ -46,7 +46,7 @@ stage ('Terraform version') {
     }
  
  
-  /*stage ('Terraform apply') { 
+  stage ('Terraform apply') { 
      steps {
         sh '''
    cd ecs-fargate-task/
@@ -54,7 +54,7 @@ stage ('Terraform version') {
    
    ''' 
        }
-    }*/
+    }
 }
 }
  //logstashSend failBuild: true, maxLines: 10000
