@@ -47,4 +47,4 @@ stage ('Terraform version') {
  }*/
  }
 }
- logstashSend failBuild: true, maxLines: 10000
+ //logstashSend failBuild: true, maxLines: 10000
